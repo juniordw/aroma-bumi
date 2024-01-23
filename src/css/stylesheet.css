@@ -5,13 +5,15 @@
     margin:0;
     box-sizing: border-box;
     list-style: none;
-    text-align: center;
+    text-decoration: none;
 }
 
 header{
     background-image: url(../img/Coffe\ Header.png);
     border-radius: 30px;
     background-size: cover;
+    margin-bottom: 100px;
+    text-align: center;
 }
 
 .bg-color{
@@ -58,8 +60,105 @@ header{
     font-weight: 400;
 }
 
-img{
-    width: 335px;
-    height: 460px;
-    object-fit: cover;
+main{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
 }
+
+.one, .two, .three, .more, .instagram{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.one img, .two img, .three img{
+    width: 335px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.one img{
+    height: 460px;
+    margin-right: 138px;
+}
+
+.two img{
+    height: 335px;
+    margin-left: 166px;
+}
+
+.three img{
+    width: 453px;
+    height: 453px;
+    margin-right: 138px;
+}
+
+.one .description{
+    width: 452px;
+}
+
+.two .description{
+    width: 425px;
+}
+
+.three .description{
+    width: 398px;
+}
+
+.description h1, .instagram h1, .more h1{
+    width: fit-content;
+    font-size: 48px;
+    font-weight: 800px;
+    line-height: 57.6px;
+    color: rgba(15, 139, 141, 1);
+    padding-bottom: 20px;
+    border-bottom: rgba(236, 154, 41, 1) solid 5px;
+    margin-bottom: 20px;
+}
+
+.description p, .description a, .more p, .more a{
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.description a, .more a{
+    text-align: center;
+    padding: 20px 50px;
+    background-color: rgba(168, 32, 26, 1);
+    border-radius: 55px;
+    color: rgba(249, 251, 254, 1);
+    margin-top: 45px;
+    display: inline-block;
+}
+
+.instagram, .more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram h1, .more h1{
+    border: none;
+    margin-bottom: 50px;
+}
+
+.more h1{
+    margin-bottom: 20px;
+}
+
+span{
+    color:rgba(236, 154, 41, 1)
+}
+
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    width: 927px;
+    justify-content: space-between;
+}
+
+.pictures img{
+    width: 237px;
+    margin-bottom: 50px;
+}
+
