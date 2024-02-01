@@ -318,6 +318,12 @@ footer{
     margin-bottom: 40px;
 }
 
+.product a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .product h3{
     font-size: 20px;
     line-height: 24px;
@@ -336,6 +342,24 @@ footer{
 
 .product img{
     width:186px
+}
+
+.product:hover{
+    transform: scale(1.25);
+    transition: all 1s ease;
+}
+
+.product:hover img{
+    order: 1;
+}
+
+.product:hover h3{
+    order: 2;
+    margin-top :0;
+}
+
+.product:hover h4{
+    order: 3;
 }
 
 .information{
